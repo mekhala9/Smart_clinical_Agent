@@ -22,17 +22,19 @@
 
 ## ▶️ Run It Like This
 
-powershell
+```powershell
 cd C:\Users\mekha\OneDrive\Desktop\Smart_clinical_agent\clinical_agent
 .\venv\Scripts\activate
 $env:OPENAI_API_KEY="sk-your-key-here"
 python etl_pipeline.py
 python clinical_summary_agent.py YOUR_PATIENT_ID
+```
 
 ---
 
 ## 📁 Folder Structure
 
+```
 clinical_agent/
 │
 ├── 📂 data/
@@ -50,11 +52,12 @@ clinical_agent/
 ├── requirements.txt
 ├── setup_windows.bat      ← Windows quick setup
 └── README.md
+```
 
 ---
 
 ## ⚙️ Architecture
-
+```
 CSVs (5 files)
     │
     ▼
@@ -81,7 +84,7 @@ CSVs (5 files)
          │
          ▼
     JSON Output (8 sections)
-
+```
 ---
 
 ## 🚀 Quick Start
